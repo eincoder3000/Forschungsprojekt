@@ -1,17 +1,20 @@
-import java.util.List;
-
 public class Bestellung {
-    private List<Gericht> gerichte;
+    private Gericht[] gerichte;
 
-    public Bestellung(List<Gericht> gerichte) {
+    public Bestellung(Gericht[] gerichte) {
         this.gerichte = gerichte;
     }
-
+    /**
+     * TODO: Implementiere die Methode gesamtpreisBerechnen().
+     * Hinweise:
+     * - Die Klasse Bestellung enthält ein Array von Gerichten.
+     * - Jedes Gericht hat das Attribut preis (vom Typ double).
+     * - Die Methode getPreis() gibt den Preis des Gerichtes zurück.
+     * - Die Methode soll die Preise aller Gerichte aufsummieren und das Ergebnis zurückgeben.
+     */
     public double gesamtpreisBerechnen() {
-        double summe = 0.0;
-        for (Gericht g : gerichte) {
-            summe += g.getPreis();
-        }
-        return summe;
+        // Hier kommt deine Lösung hin
+        return 0.0; // Platzhalter
     }
 }
+
